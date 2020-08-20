@@ -172,6 +172,7 @@ variable "VPC_ID"{
 ```terraform apply```
  will implement the code - deploy the infastructure
 
+Note: For this iteration DevOpsStudent VPC was used 
 
 
 

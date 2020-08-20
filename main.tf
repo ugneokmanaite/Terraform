@@ -55,6 +55,7 @@ resource "aws_subnet" "public" {
   description   = "Allow http and https traffic"
   vpc_id       = "vpc-07e47e9d90d2076da"
 
+# create ingress block of code
 
     ingress {
       description = "https from VPC"
@@ -63,6 +64,7 @@ resource "aws_subnet" "public" {
       protocol = "tcp"
       cidr_blocks = ["0.0.0.0/0"]
  }
+ # create egress block of code
        egress {
        from_port   = 0
        to_port     = 0
@@ -72,6 +74,3 @@ resource "aws_subnet" "public" {
 
 }
 
-# create ingress block of code
-
-# create egress block of code
